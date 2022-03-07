@@ -29,9 +29,9 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-en:
+it:
   mockups:
     page_a:
-      headline: "This is the homepage"
-      first_paragraph: "the text showed here is passed via a 'translation file' and this means that our application is ready to support more languages."
-      link_to_page_B: "Let's go to page B."
+      headline: "Questa è l'homepage"
+      first_paragraph: "il testo mostrato è o passato da un 'file di traduzione' e questo significa che la nostra applicazione è pronta a supportare più lingue."
+      link_to_page_B: "Andiamo alla pagina B"
