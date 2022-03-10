@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-
+  #before_action :set_user, only: %i[ show edit update destroy ]
+ 
   # GET /users
   # GET /users.json
   def index
@@ -54,9 +56,12 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-    @user.destroy
+    @user.destroy unless @user == current_user
     respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+      format.html do
+        redirect_to users_url, notice: "User was successfully destroyed." unless @user == current_user
+        redirect_to users_url, notice: "The logged in user cannot be destroyed." if @user == current_user
+      end
       format.json { head :no_content }
     end
   end
@@ -67,9 +72,12 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+    # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:name, :email, :password, :password_confirmation, :remember_created_at)
+      if params[:user][:password].blank?
+        params.require(:user).permit(:name, :email)
+      else
+        params.require(:user).permit(:name, :email, :password, :password_confirmation)
+      end
     end
-
 end
