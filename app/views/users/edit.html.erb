@@ -1,3 +1,9 @@
+<%# == Meta_data ============================================================ %>
+
+<% provide(:html_head_title, "Edit #{@user.name}") %>
+
+<%# == Meta_data - end ====================================================== %>
+
 <h1>Editing user</h1>
 
 <%= render "form", user: @user %>
