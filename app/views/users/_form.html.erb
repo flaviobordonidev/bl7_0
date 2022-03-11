@@ -31,6 +31,14 @@
     <%= form.password_field :password_confirmation, placeholder: true %>
   </div>
 
+  <div>    
+    <%= form.label :language %>
+    <%#= form.text_field :language %>
+    <%#= form.select(:language, [["Lingua Italiana", "it"], ["Lingua Inglese", "en"]]) %>
+    <%= form.select(:language, User.languages.keys.map {|language| [language,language]}) %>
+    <%#= form.select(:language, User.languages.keys.map {|language| [language.titleize,language]}) %>
+  </div>
+
   <div>
     <%= form.label :encrypted_password, style: "display: block" %>
     <%= form.text_field :encrypted_password %>
