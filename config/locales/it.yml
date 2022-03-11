@@ -30,10 +30,36 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 it:
+  activerecord:
+    attributes:
+      user:
+        name: "Nome utente" # fallback for when label is nil
+        email: "Email" # fallback for when label is nil
+        password: "Password" # fallback for when label is nil
+        password_confirmation: "Conferma password" # fallback for when label is nil
+    models:
+      user: "utente"
+  helpers:
+    label:
+      user:
+        name: "Nome utente"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Conferma password"
+    placeholder:
+      user:
+        name: "Nome utente"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Conferma password"
+    submit:
+      user:
+        create: "Crea %{model}"
+        update: "Aggiorna %{model}"
   mockups:
     page_a:
       headline: "Questa è l'homepage"
-      first_paragraph: "il testo mostrato è o passato da un 'file di traduzione' e questo significa che la nostra applicazione è pronta a supportare più lingue."
+      first_paragraph: "Il testo mostrato è o passato da un 'file di traduzione' e questo significa che la nostra applicazione è pronta a supportare più lingue."
       link_to_page_B: "Andiamo alla pagina B"
   users:
     create:
