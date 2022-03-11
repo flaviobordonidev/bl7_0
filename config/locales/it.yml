@@ -35,3 +35,11 @@ it:
       headline: "Questa è l'homepage"
       first_paragraph: "il testo mostrato è o passato da un 'file di traduzione' e questo significa che la nostra applicazione è pronta a supportare più lingue."
       link_to_page_B: "Andiamo alla pagina B"
+  users:
+    create:
+      notice: "L'utente è stato creato con successo."
+    update:
+      notice: "L'utente è stato aggiornato con successo."
+    destroy:
+      notice: "L'utente è stato eliminato con successo."
+      notice_logged_in: "L'utente loggato non può essere eliminato."

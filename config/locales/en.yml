@@ -35,3 +35,11 @@ en:
       headline: "This is the homepage"
       first_paragraph: "the text showed here is passed via a 'translation file' and this means that our application is ready to support more languages."
       link_to_page_B: "Let's go to page B."
+  users:
+    create:
+      notice: 'User was successfully created.'
+    update:
+      notice: 'User was successfully updated.'
+    destroy:
+      notice: "User was successfully destroyed."
+      notice_logged_in: "The logged in user cannot be destroyed."
