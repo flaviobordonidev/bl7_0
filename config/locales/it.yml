@@ -62,6 +62,12 @@ it:
       first_paragraph: "Il testo mostrato è o passato da un 'file di traduzione' e questo significa che la nostra applicazione è pronta a supportare più lingue."
       link_to_page_B: "Andiamo alla pagina B"
   users:
+    index:
+      html_head_title: "Tutti gli utenti"
+    new:
+      html_head_title: "Nuovo utente"
+    edit:
+      html_head_title: "Modifica"
     create:
       notice: "L'utente è stato creato con successo."
     update:

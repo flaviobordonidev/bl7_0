@@ -62,6 +62,12 @@ en:
       first_paragraph: "The text showed here is passed via a 'translation file' and this means that our application is ready to support more languages."
       link_to_page_B: "Let's go to page B."
   users:
+    index:
+      html_head_title: "All users"
+    new:
+      html_head_title: "New post"
+    edit:
+      html_head_title: "Edit"
     create:
       notice: 'User was successfully created.'
     update:
