@@ -56,6 +56,19 @@ it:
       user:
         create: "Crea %{model}"
         update: "Aggiorna %{model}"
+ 
+#-------------------------------------------------------------------------------
+# Controllers (in ordine alfabetico)
+
+  eg_posts:
+    index:
+      html_head_title: "Tutti gli articoli"
+    show:
+      html_head_title: "Art. %{id}"
+    edit:
+      html_head_title: "Modifica Art. %{id}"
+    new:
+      html_head_title: "Nuovo articolo"
   mockups:
     page_a:
       headline: "Questa è l'homepage"

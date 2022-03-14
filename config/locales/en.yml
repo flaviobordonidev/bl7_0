@@ -56,6 +56,19 @@ en:
       user:
         create: "Create %{model}"
         update: "Update %{model}"
+
+#-------------------------------------------------------------------------------
+# Controllers (in alphabetical order)
+
+  eg_posts:
+    index:
+      html_head_title: "All posts"
+    show:
+      html_head_title: "Post %{id}"
+    edit:
+      html_head_title: "Edit Post %{id}"
+    new:
+      html_head_title: "New post"
   mockups:
     page_a:
       headline: "This is the homepage"
