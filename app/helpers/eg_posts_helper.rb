@@ -1,0 +1,2 @@
+module EgPostsHelper
+end

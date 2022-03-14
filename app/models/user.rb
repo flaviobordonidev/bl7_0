@@ -6,4 +6,6 @@ class User < ApplicationRecord
 
   #enum language: [:it, :en]
   enum language: {it: 0, en: 1}
+
+  has_many :eg_posts
 end
