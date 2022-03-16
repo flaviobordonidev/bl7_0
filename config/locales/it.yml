@@ -266,6 +266,7 @@ it:
       default: "%a %d %b %Y, %H:%M:%S %z"
       long: "%d %B %Y %H:%M"
       short: "%d %b %H:%M"
+      my_long: "%A %d %^B %Y alle %H:%M e %S secondi"
     pm: pm
 
 #-------------------------------------------------------------------------------

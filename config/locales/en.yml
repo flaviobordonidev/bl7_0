@@ -266,6 +266,7 @@ en:
       default: "%a, %d %b %Y %I:%M:%S %p %Z"
       long: "%B %d, %Y %I:%M %p"
       short: "%d %b %I:%M %p"
+      my_long: "%A %d %^B %Y at %H:%M and %S seconds"
     pm: pm
 
 #-------------------------------------------------------------------------------
