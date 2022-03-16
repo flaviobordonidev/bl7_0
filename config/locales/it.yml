@@ -215,6 +215,7 @@ it:
         significant: false
         strip_insignificant_zeros: false
         unit: "€"
+        price_for_reports: "Questo ci costa %{price} di soldini"
     format:
       delimiter: "."
       precision: 2

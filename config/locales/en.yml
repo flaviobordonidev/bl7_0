@@ -215,6 +215,7 @@ en:
         significant: false
         strip_insignificant_zeros: false
         unit: "$"
+        price_for_reports: "This costs us %{price} of pennies"
     format:
       delimiter: ","
       precision: 3

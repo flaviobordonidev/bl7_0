@@ -22,6 +22,13 @@
   <p>
     <strong>Price:</strong>
     <%= eg_post.price %>
+    <br> numero formattato: <%= number_to_currency(eg_post.price) %>
+    <br> numero formattato con 3 decimali: <%= number_to_currency(eg_post.price, precision: 3) %>
+    <br> numero formattato con 4 decimali: <%= number_to_currency(eg_post.price, precision: 4) %>
+    <br> numero formattato con 5 decimali: <%= number_to_currency(eg_post.price, precision: 5) %>
+    (nel database abbiamo dichiarato 4 decimali quindi la quinta cifra decimale sarà sempre zero)
+    <br> numero formattato con frase: <%= t "number.currency.format.price_for_reports", price: number_to_currency(eg_post.price, precision: 2) %>
+    <br> numero formattato descrittivo con frase: <%= t "number.currency.format.price_for_reports", price: number_to_human(eg_post.price) %>
   </p>
 
   <p>
