@@ -1,4 +1,5 @@
 class EgPostsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_eg_post, only: %i[ show edit update destroy ]
 
   # GET /eg_posts or /eg_posts.json
