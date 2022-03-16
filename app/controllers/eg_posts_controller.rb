@@ -66,6 +66,6 @@ class EgPostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def eg_post_params
-      params.require(:eg_post).permit(:meta_title, :meta_description, :headline, :incipit, :user_id)
+      params.require(:eg_post).permit(:meta_title, :meta_description, :headline, :incipit, :price, :user_id)
     end
 end
