@@ -5,6 +5,7 @@ class EgPostsController < ApplicationController
   # GET /eg_posts or /eg_posts.json
   def index
     @eg_posts = EgPost.all
+    authorize @eg_posts
   end
 
   # GET /eg_posts/1 or /eg_posts/1.json
@@ -14,6 +15,7 @@ class EgPostsController < ApplicationController
   # GET /eg_posts/new
   def new
     @eg_post = EgPost.new
+    authorize @eg_post
   end
 
   # GET /eg_posts/1/edit
@@ -23,6 +25,7 @@ class EgPostsController < ApplicationController
   # POST /eg_posts or /eg_posts.json
   def create
     @eg_post = EgPost.new(eg_post_params)
+    authorize @eg_post
 
     respond_to do |format|
       if @eg_post.save
@@ -62,6 +65,7 @@ class EgPostsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_eg_post
       @eg_post = EgPost.find(params[:id])
+      authorize @eg_post
     end
 
     # Only allow a list of trusted parameters through.
