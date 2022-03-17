@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
 
   include Pundit
+  rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
   
   #def after_sign_in_path_for(resource_or_scope)
   #  current_user # goes to users/1 (if current_user = 1)
@@ -31,5 +32,9 @@ class ApplicationController < ActionController::Base
       else
         I18n.locale = I18n.default_locale
       end
+    end
+
+    def user_not_authorized
+      redirect_to request.referrer || root_path, notice: t("pundit.you_are_not_authorized")
     end
 end

@@ -307,3 +307,9 @@ it:
     destroy:
       notice: "L'utente è stato eliminato con successo."
       notice_logged_in: "L'utente loggato non può essere eliminato."
+
+#-------------------------------------------------------------------------------
+# Gems (in ordine alfabetico)
+
+  pundit:
+    you_are_not_authorized: "Non sei autorizzato a eseguire questa azione."
