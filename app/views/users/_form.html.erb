@@ -40,6 +40,11 @@
   </div>
 
   <div>
+    <%= form.label :role %>
+    <%= form.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %>
+  </div>
+  
+  <div>
     <%= form.label :encrypted_password, style: "display: block" %>
     <%= form.text_field :encrypted_password %>
   </div>
