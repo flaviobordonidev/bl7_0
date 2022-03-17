@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   before_action :set_locale
 
+  include Pundit
+  
   #def after_sign_in_path_for(resource_or_scope)
   #  current_user # goes to users/1 (if current_user = 1)
   #  #users_path #goes to users/index
