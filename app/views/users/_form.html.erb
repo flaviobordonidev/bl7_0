@@ -39,12 +39,16 @@
     <%#= form.select(:language, User.languages.keys.map {|language| [language.titleize,language]}) %>
   </div>
 
-  <div>
-    <%= form.label :role %>
-    <%#= form.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %>
-    <%= form.select(:role, User.roles.keys.map {|role| [User.human_attribute_name("role.#{role}"), role]}) %>
-  </div>
-  
+  <%# if user_signed_in? and current_user.admin? %>
+  <% if current_user.present? and current_user.admin? and @user != current_user %>
+    <div>
+      <%= form.label :role %>
+      <%#= form.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %>
+      <%= form.select(:role, User.roles.keys.map {|role| [User.human_attribute_name("role.#{role}"), role]}) %>
+      <%#= form.collection_radio_buttons :role, Hash[User.roles.map { |k,v| [k, User.human_attribute_name("role.#{k}")] }], :first, :second %>
+    </div>
+  <% end %>
+
   <div>
     <%= form.label :encrypted_password, style: "display: block" %>
     <%= form.text_field :encrypted_password %>
