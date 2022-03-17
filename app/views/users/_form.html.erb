@@ -41,7 +41,8 @@
 
   <div>
     <%= form.label :role %>
-    <%= form.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %>
+    <%#= form.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %>
+    <%= form.select(:role, User.roles.keys.map {|role| [User.human_attribute_name("role.#{role}"), role]}) %>
   </div>
   
   <div>

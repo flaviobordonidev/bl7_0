@@ -37,6 +37,12 @@ it:
         email: "Email" # fallback for when label is nil
         password: "Password" # fallback for when label is nil
         password_confirmation: "Conferma password" # fallback for when label is nil
+        role: "ruolo"
+      user/role:
+        admin: "amministratore"
+        author: "autore"
+        moderator: "moderatore"
+        user: "utente"
     errors:
       messages:
         record_invalid: 'Validazione fallita: %{errors}'
