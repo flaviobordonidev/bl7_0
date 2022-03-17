@@ -2,6 +2,8 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
 
   include Pundit
+  include Pagy::Backend
+
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
   
   #def after_sign_in_path_for(resource_or_scope)
