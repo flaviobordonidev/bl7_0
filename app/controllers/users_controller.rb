@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   # GET /users or /users.json
   def index
     @users = User.all
+    authorize @users
   end
 
   # GET /users/1 or /eg_users/1.json
@@ -71,6 +72,7 @@ class UsersController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
+      authorize @user
     end
 
     # Only allow a list of trusted parameters through.
