@@ -4,8 +4,8 @@ class EgPostsController < ApplicationController
 
   # GET /eg_posts or /eg_posts.json
   def index
-    @eg_posts = EgPost.all
-    @pagy, @eg_posts = pagy(EgPost.all, items: 2)
+    #@eg_posts = EgPost.all
+    @pagy, @eg_posts = pagy(EgPost.all, items: 3)
     authorize @eg_posts
   end
 
