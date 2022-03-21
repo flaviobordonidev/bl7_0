@@ -37,6 +37,11 @@
     <%= form.number_field :price, step: :any %>
   </div>
 
+  <div class="field">
+    <%= form.label :header_image %>
+    <%= form.file_field :header_image %>
+  </div>
+
   <div>
     <%= form.label :user_id, style: "display: block" %>
     <%= form.text_field :user_id %>

@@ -31,6 +31,12 @@
     <br> numero formattato descrittivo con frase: <%= t "number.currency.format.price_for_reports", price: number_to_human(eg_post.price) %>
   </p>
 
+  <% if eg_post.header_image.attached? %>
+    <p><%= image_tag eg_post.header_image %></p>
+  <% else %>
+    <p>Nessuna immagine presente</p>
+  <% end %>
+
   <p>
     <strong>User:</strong>
     <%= eg_post.user_id %>
