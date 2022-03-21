@@ -45,11 +45,14 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 # gem "sassc-rails"
 
+# Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
+gem 'image_processing', '~> 1.12', '>= 1.12.2'
+
 # API clients for AWS S3 services. Comunicazione con Amazon Web Service S3 per ActiveStorage
 gem 'aws-sdk-s3', '~> 1.113', require: false
 
-# Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-gem 'image_processing', '~> 1.12', '>= 1.12.2'
+# A binding for the libvips image processing library
+gem 'ruby-vips', '~> 2.1', '>= 2.1.4'
 
 # Flexible authentication solution for Rails with Warden 
 gem 'devise', '~> 4.8', '>= 4.8.1'
