@@ -62,6 +62,13 @@ class EgPostsController < ApplicationController
     end
   end
 
+  # GET /eg_posts/1/delete_image_attachment
+  def delete_image_attachment
+    @image_to_delete = ActiveStorage::Attachment.find(params[:id])
+    @image_to_delete.purge
+    redirect_back(fallback_location: request.referer)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_eg_post
