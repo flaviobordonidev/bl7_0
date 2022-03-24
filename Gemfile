@@ -63,6 +63,12 @@ gem 'pundit', '~> 2.2'
 # Agnostic pagination in plain ruby
 gem 'pagy', '~> 5.10', '>= 5.10.1'
 
+# Bootstrap 5 ruby gem for Ruby on Rails (Sprockets)
+gem 'bootstrap', '~> 5.1', '>= 5.1.3'
+
+# Integrate SassC-Ruby into Rails.
+gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
