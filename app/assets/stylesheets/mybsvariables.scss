@@ -17,9 +17,5 @@ $theme-colors: (
     "danger":     #dc3545,
 );
 
-
-//https://huemint.com/website-2/#palette=262f44-fffeff-e34939-0c9b8f
-//.a {color: #262f44;}
-//.b {color: #fffeff;}
-//.c {color: #e34939;}
-//.d {color: #0c9b8f;}
+// Questo NON mi piace perché cambia prima di chiamare bootstrap.
+// Preferisco farlo successivamente su dei "customs.scss" che posso usare su "layers" differenti.

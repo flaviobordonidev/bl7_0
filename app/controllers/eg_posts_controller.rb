@@ -5,9 +5,9 @@ class EgPostsController < ApplicationController
   # GET /eg_posts or /eg_posts.json
   def index
     #@eg_posts = EgPost.all
-    #@pagy, @eg_posts = pagy(EgPost.all, items: 2)
-    #@posts = EgPost.published.order(created_at: "DESC")
-    @pagy, @eg_posts = pagy(EgPost.published.order(created_at: "DESC"), items: 2)
+    #@eg_posts = EgPost.published.order(created_at: "DESC")
+    @pagy, @eg_posts = pagy(EgPost.all, items: 2)
+    #@pagy, @eg_posts = pagy(EgPost.published.order(created_at: "DESC"), items: 2)
     authorize @eg_posts
   end
 
@@ -80,6 +80,6 @@ class EgPostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def eg_post_params
-      params.require(:eg_post).permit(:meta_title, :meta_description, :headline, :incipit, :price, :header_image, :content, :user_id)
+      params.require(:eg_post).permit(:meta_title, :meta_description, :headline, :incipit, :price, :header_image, :content, :published, :published_at, :user_id)
     end
 end
