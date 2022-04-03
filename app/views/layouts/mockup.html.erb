@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mockups</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+<!--
+    <style>
+     [class*="col"] {
+        padding: 1rem;
+        background-color: #33b5e5;
+        border: 2px solid #fff;
+        color: #fff;
+        text-align: center;
+    }
+    [class*="con"] {
+        padding: 1rem;
+        background-color: #9e33e5;
+        border: 2px solid #fff;
+        color: #fff;
+        text-align: center;
+    }
+    </style>
+-->
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

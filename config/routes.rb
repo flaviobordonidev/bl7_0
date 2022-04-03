@@ -11,6 +11,16 @@ Rails.application.routes.draw do
 
   get 'mockups/page_a'
   get 'mockups/page_b'
+  get 'mockups/bs_grid_a'
+  get 'mockups/bs_grid_b'
+  get 'mockups/bs_buttons'
+  get 'mockups/bs_cards_and_panels'
+  get 'mockups/bs_images'
+  get 'mockups/bs_icons'
+  get 'mockups/bs_theming_kit'
+  get 'mockups/ud_home'
+  get 'mockups/ud_news'
+  get 'mockups/ud_tema'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
