@@ -27,6 +27,10 @@ class EgPostsController < ApplicationController
 
   # POST /eg_posts or /eg_posts.json
   def create
+    # params restituisce una stringa ed il check-box restituisce "1" se flaggato.
+    params[:eg_post][:published_at] = "#{DateTime.current}" if params[:eg_post][:published] == "1" and params[:eg_post][:published_at].blank?
+    params[:eg_post][:published_at] = "" if params[:eg_post][:published] == "0"
+
     @eg_post = EgPost.new(eg_post_params)
     authorize @eg_post
 
@@ -43,6 +47,11 @@ class EgPostsController < ApplicationController
 
   # PATCH/PUT /eg_posts/1 or /eg_posts/1.json
   def update
+    #raise "published è #{params[:post][:published] == "1"} - published_at è #{params[:post][:published_at].blank?} - La data di oggi è #{DateTime.current}"
+    # params restituisce una stringa ed il check-box restituisce "1" se flaggato.
+    params[:eg_post][:published_at] = "#{DateTime.current}" if params[:eg_post][:published] == "1" and params[:eg_post][:published_at].blank?
+    params[:eg_post][:published_at] = "" if params[:eg_post][:published] == "0"
+
     respond_to do |format|
       if @eg_post.update(eg_post_params)
         format.html { redirect_to eg_post_url(@eg_post), notice: "Eg post was successfully updated." }
