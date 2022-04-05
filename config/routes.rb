@@ -1,9 +1,18 @@
 Rails.application.routes.draw do
-  resources :eg_posts do
-    member do
-      get :delete_image_attachment
+
+  namespace :authors do
+    resources :eg_posts do
+      member do
+        delete :delete_image_attachment
+      end
     end
   end
+  resources :eg_posts do
+    member do
+      delete :delete_image_attachment
+    end
+  end
+
   resources :eg_users
   get 'users/index'
   devise_for :users, path: '', path_names: {sign_in: 'login', sign_out: 'logout'}, controllers: { sessions: 'users/sessions' }
