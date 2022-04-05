@@ -288,6 +288,7 @@ en:
       html_head_title: "Edit Post %{id}"
     new:
       html_head_title: "New post"
+    not_published: "It is not published yet"
   mockups:
     page_a:
       headline: "This is the homepage"

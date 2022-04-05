@@ -288,6 +288,7 @@ it:
       html_head_title: "Modifica Art. %{id}"
     new:
       html_head_title: "Nuovo articolo"
+    not_published: "non è stato ancora pubblicato"
   mockups:
     page_a:
       headline: "Questa è l'homepage"
