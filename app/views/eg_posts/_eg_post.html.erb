@@ -51,6 +51,7 @@
   <p>
     <strong>published_at:</strong>
     <%= l eg_post.published_at, format: :my_long if eg_post.published_at.present? %>
+    <%= eg_post.published_at_formatted %>
   </p>
 
   <p>
