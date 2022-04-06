@@ -1,31 +1,32 @@
 class Authors::EgPostsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_eg_post, only: %i[ show edit update destroy ]
+  before_action :set_eg_post, only: %i[ edit update destroy ]
+  #layout 'dashboard'
 
-  # GET /eg_posts or /eg_posts.json
+  # GET /authors/eg_posts or /authors/eg_posts.json
   def index
     #@eg_posts = EgPost.all
     #@eg_posts = EgPost.published.order(created_at: "DESC")
-    @pagy, @eg_posts = pagy(EgPost.all, items: 6)
+    #@pagy, @eg_posts = pagy(EgPost.all, items: 6)
     #@pagy, @eg_posts = pagy(EgPost.published.order(created_at: "DESC"), items: 2)
+    @pagy, @eg_posts = pagy(EgPost.all.order(created_at: "DESC"), items: 2) if current_user.admin?
+    @pagy, @eg_posts = pagy(current_user.eg_posts.order(created_at: "DESC"), items: 2) unless current_user.admin?
+    #@posts = current_user.eg_posts.order(created_at: "DESC") unless current_user.admin?
+    #@posts = Post.all.order(created_at: "DESC") if current_user.admin?
     authorize @eg_posts
   end
 
-  # GET /eg_posts/1 or /eg_posts/1.json
-  def show
-  end
-
-  # GET /eg_posts/new
+  # GET /authors/eg_posts/new
   def new
     @eg_post = EgPost.new
     authorize @eg_post
   end
 
-  # GET /eg_posts/1/edit
+  # GET /authors/eg_posts/1/edit
   def edit
   end
 
-  # POST /eg_posts or /eg_posts.json
+  # POST /authors/eg_posts or /authors/eg_posts.json
   def create
     # params restituisce una stringa ed il check-box restituisce "1" se flaggato.
     params[:eg_post][:published_at] = "#{DateTime.current}" if params[:eg_post][:published] == "1" and params[:eg_post][:published_at].blank?
@@ -45,7 +46,7 @@ class Authors::EgPostsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /eg_posts/1 or /eg_posts/1.json
+  # PATCH/PUT /authors/eg_posts/1 or /authors/eg_posts/1.json
   def update
     #raise "published è #{params[:post][:published] == "1"} - published_at è #{params[:post][:published_at].blank?} - La data di oggi è #{DateTime.current}"
     # params restituisce una stringa ed il check-box restituisce "1" se flaggato.
@@ -63,7 +64,7 @@ class Authors::EgPostsController < ApplicationController
     end
   end
 
-  # DELETE /eg_posts/1 or /eg_posts/1.json
+  # DELETE /authors/eg_posts/1 or /authors/eg_posts/1.json
   def destroy
     @eg_post.destroy
 
@@ -73,7 +74,7 @@ class Authors::EgPostsController < ApplicationController
     end
   end
 
-  # GET /eg_posts/1/delete_image_attachment
+  # GET /authors/eg_posts/1/delete_image_attachment
   def delete_image_attachment
     @image_to_delete = ActiveStorage::Attachment.find(params[:id])
     @image_to_delete.purge

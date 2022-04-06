@@ -9,8 +9,6 @@
 <%= render @eg_post %>
 
 <div>
-  <%= link_to "Edit this eg post", edit_eg_post_path(@eg_post) %> |
-  <%= link_to "Back to eg posts", eg_posts_path %>
-
-  <%= button_to "Destroy this eg post", @eg_post, method: :delete %>
+  <%= link_to "Back to eg posts", eg_posts_path if current_user.present? == false %>
+  <%= link_to "Back to authors eg posts", authors_eg_posts_path if current_user.present? == true %>
 </div>

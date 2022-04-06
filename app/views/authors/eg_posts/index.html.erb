@@ -6,13 +6,13 @@
 
 <p style="color: green"><%= notice %></p>
 
-<h1>Eg posts</h1>
+<h1>AUTHOR Eg posts</h1>
 
 <div id="eg_posts">
   <% @eg_posts.each do |eg_post| %>
     <%= render eg_post %>
     <p>
-      <%= link_to "Show this eg post", eg_post %>
+      <%= link_to "Show this eg post", eg_post_path(eg_post) %>
     </p>
   <% end %>
 </div>
@@ -21,4 +21,4 @@
 <br/>
 <br/>
 
-<%= link_to "New eg post", new_eg_post_path %>
+<%= link_to "New eg post", new_authors_eg_post_path %>

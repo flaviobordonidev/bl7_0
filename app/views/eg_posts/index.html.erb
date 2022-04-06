@@ -6,7 +6,7 @@
 
 <p style="color: green"><%= notice %></p>
 
-<h1>Eg posts</h1>
+<h1>READERS Eg posts</h1>
 
 <div id="eg_posts">
   <% @eg_posts.each do |eg_post| %>
@@ -18,7 +18,3 @@
 </div>
 
 <%= sanitize pagy_nav(@pagy) %>
-<br/>
-<br/>
-
-<%= link_to "New eg post", new_eg_post_path %>
