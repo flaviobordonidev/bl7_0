@@ -34,7 +34,7 @@ class EgPostPolicy < ApplicationPolicy
         false #se arrivo qui c'è un errore quindi non autorizzo
       end
     else
-      false
+      true #la visualizzo anche se non sono loggato.
     end
   end
   

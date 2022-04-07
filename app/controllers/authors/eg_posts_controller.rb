@@ -69,7 +69,7 @@ class Authors::EgPostsController < ApplicationController
     @eg_post.destroy
 
     respond_to do |format|
-      format.html { redirect_to eg_posts_url, notice: "Eg post was successfully destroyed." }
+      format.html { redirect_to authors_eg_posts_url, notice: 'Post was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

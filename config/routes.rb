@@ -1,17 +1,13 @@
 Rails.application.routes.draw do
 
   namespace :authors do
-    resources :eg_posts do
+    resources :eg_posts, :except => [:show] do
       member do
         delete :delete_image_attachment
       end
     end
   end
-  resources :eg_posts do
-    member do
-      delete :delete_image_attachment
-    end
-  end
+  resources :eg_posts, :only => [:index, :show] 
 
   resources :eg_users
   get 'users/index'
@@ -30,6 +26,7 @@ Rails.application.routes.draw do
   get 'mockups/ud_home'
   get 'mockups/ud_news'
   get 'mockups/ud_tema'
+  #get 'eg_posts', to:'eg_posts#index', as: :user_root #creates user_root_path (default path after sign_in)
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
