@@ -1,0 +1,105 @@
+<div class="container">
+  <h2>Flex</h2>
+  <!-- flex si attiva sul contenitore parent -->
+  <!-- d-flex prende la larghezza totale (100%)-->
+  <!-- d-inline-flex prende solo la larghezza necessaria a contenere gli oggetti -->
+  <div class = "d-flex" style="background-color: coral; height: 200px;">
+    <h3 class = "badge bg-primary">flex item 1<h3>
+    <h3 class = "badge bg-primary">flex item 2<h3>
+    <h3 class = "badge bg-primary">flex item 3<h3>
+  </div>
+
+  <h2>Direction</h2>
+  <!-- se verticale o orizzontale (di default è orizzontale) -->
+  <!-- flex-row è orizzontale da sinistra a destra (il parametro di default) -->
+  <!-- flex-row-reverse è orizzontale da destra a sinistra -->
+  <!-- flex-column è verticale dell'alto verso il basso -->
+  <!-- flex-column-reverse è verticale dal basso verso l'alto -->
+  <div class = "d-flex flex-row-reverse" style="background-color: coral; height: 200px;">
+    <h3 class = "badge bg-primary">flex item 1<h3>
+    <h3 class = "badge bg-primary">flex item 2<h3>
+    <h3 class = "badge bg-primary">flex item 3<h3>
+  </div>
+
+
+  <h2>Justify content</h2>
+  <!-- Opzione molto utile per allineare il contenuto in orizzontale -->
+  <!-- justify-content-start -->
+  <!-- justify-content-end -->
+  <!-- justify-content-center -->
+  <!-- justify-content-between -->
+  <!-- justify-content-around -->
+  <!-- justify-content-evenly -->
+  <div class = "d-flex justify-content-center" style="background-color: coral; height: 200px;">
+    <h3 class = "badge bg-primary">flex item 1<h3>
+    <h3 class = "badge bg-primary">flex item 2<h3>
+    <h3 class = "badge bg-primary">flex item 3<h3>
+  </div>
+
+  <h2>Align items</h2>
+  <!-- Opzione molto utile per allineare il contenuto in verticale -->
+  <!-- align-items-start -->
+  <!-- align-items-end -->
+  <!-- align-items-center -->
+  <!-- align-items-baseline -->
+  <!-- align-items-stretch -->
+  <div class = "d-flex align-items-center" style="background-color: coral; height: 200px;">
+    <h3 class = "badge bg-primary">flex item 1<h3>
+    <h3 class = "badge bg-primary">flex item 2<h3>
+    <h3 class = "badge bg-primary">flex item 3<h3>
+  </div>
+
+  <h2>Align self</h2>
+  <!-- Allinea solo l'item specifico -->
+  <!-- align-self-start -->
+  <!-- align-self-end -->
+  <!-- align-self-center -->
+  <!-- align-self-baseline -->
+  <!-- align-self-stretch -->
+  <div class = "d-flex justify-content-evenly align-items-stretch" style="background-color: coral; height: 200px;">
+    <h3 class = "badge bg-primary align-self-start">flex item 1<h3>
+    <h3 class = "badge bg-primary">flex item 2<h3>
+    <h3 class = "badge bg-primary">flex item 3<h3>
+  </div>
+
+  <h2>Fill</h2>
+  <!-- allarga a riiempire lo spazio solo l'item specifico -->
+  <!-- flex-fill -->
+  <div class = "d-flex justify-content-evenly align-items-stretch" style="background-color: coral; height: 200px;">
+    <h3 class = "badge bg-primary align-self-start flex-fill">flex item 1<h3>
+    <h3 class = "badge bg-primary">flex item 2<h3>
+    <h3 class = "badge bg-primary">flex item 3<h3>
+  </div>
+
+
+  <h2>Auto margins</h2>
+  <!-- Mette i margini solo all'item specifico -->
+  <!-- ms-auto (margin start - auto) -->
+  <!-- me-auto (margin end - auto) -->
+  <!-- mx-auto (margin horizontal - auto) -->
+  <div class = "d-flex justify-content-evenly align-items-stretch" style="background-color: coral; height: 200px;">
+    <h3 class = "badge bg-primary align-self-start ms-auto">flex item 1<h3>
+    <h3 class = "badge bg-primary">flex item 2<h3>
+    <h3 class = "badge bg-primary">flex item 3<h3>
+  </div>
+
+  <h2>Esempio tutto allineato</h2>
+  <!-- Flex agisce agisce su qualsiasi tipo di oggetti/items -->
+  <div class = "d-flex justify-content-center align-items-center" style="background-color: coral; height: 200px;">
+    <h1>This is my heading<h1>
+    <button type="button" class = "btn btn-primary">Button</button>
+    <button type="button" class = "btn btn-danger">Button</button>
+  </div>
+
+  <h2>Esempio con titolo sopra</h2>
+  <!-- Flex agisce solo su un livello sotto -->
+  <!-- Nel nostro caso solo sul div sotto e non sugli oggetti dentro il div -->
+  <div class = "d-flex justify-content-center align-items-center" style="background-color: coral; height: 200px;">
+    <div>
+      <h1>This is my heading<h1>
+      <button type="button" class = "btn btn-primary">Button</button>
+      <button type="button" class = "btn btn-danger">Button</button>
+    </div>
+  </div>
+
+</div>
