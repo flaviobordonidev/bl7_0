@@ -1,51 +1,56 @@
-<div class="container">
-  <h1>Responsive images</h1>
+<h2> Immagini fuori dalla Bootstrap grid </h2>
 
-  <h2 class="my-1">Image fluid</h2>
-  <div style="width: 40%; border: 5px red solid">
-    <img
-      class="img-fluid"
-      src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"
-    />
-  </div>
-  <!--la class="img-fluid" mi rende responsive l'immagine. Se la tolgo mi esce dal div e non si ridimensiona-->
+<h3 class="my-1">Image NON fluid (esce dal div che la contiene)</h3>
+<div style="width: 40%; border: 3px red solid">
+  <img class="img" src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"/>
+</div>
 
-  <h2 class="my-5">Img in a div that floats</h2>
-  <div style="width: 40%; border: 5px red solid" class="float-end">
-    <img
-      class="img-fluid rounded float-end"
-      src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"
-    />
-  </div>
-  <!-- Quando usi "float" chiudi sempre con un "clearfix" altrimenti anche che quello che segue prende il "float" -->
-  <p>questo testo si mette a sinistra dell'immagine perché ancora condizionato dal "float"</p>
-
-  <div class="clearfix my-5"></div>
-
-  <p>questo testo è sotto l'immagine perché abbiamo eliminato l'effetto "float" con il "clearfix"</p>
+<h3 class="my-1">Image fluid</h3>
+<div style="width: 40%; border: 3px red solid">
+  <img class="img-fluid" src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"/>
+</div>
+<!--la class="img-fluid" mi rende responsive l'immagine. Se la tolgo mi esce dal div e non si ridimensiona-->
 
 
-  <h2>Img floats in a grid</h2>
-  <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-          <img
-            class="img-fluid rounded float-end"
-            src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"
-          />
-        </div>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <h2> Immagini dentro la Bootstrap grid </h2>
+      <h3 class="my-1">Image fluid</h3>
+      <div style="width: 40%; border: 3px red solid">
+        <img class="img-fluid" src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"/>
+      </div>
+      <!--la class="img-fluid" mi rende responsive l'immagine. Se la tolgo mi esce dal div e non si ridimensiona-->
     </div>
   </div>
 
-  <div class="clearfix my-5"></div>
+  <div class="row">
+    <div class="col">
+      <h2 class="my-5">Img in a div that floats</h2>
+      <div style="width: 40%; border: 3px red solid" class="float-end">
+        <img
+          class="img-fluid rounded float-end"
+          src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"
+        />
+      </div>
+      <!-- Quando usi "float" chiudi sempre con un "clearfix" altrimenti anche che quello che segue prende il "float" -->
+      <p>questo testo si mette a sinistra dell'immagine perché ancora condizionato dal "float"</p>
+      <div class="clearfix my-5"></div>
+      <p>questo testo è sotto l'immagine perché abbiamo eliminato l'effetto "float" con il "clearfix"</p>
+    </div>
+  </div>
 
-  <h2>Allineamo l'immagine al centro</h2>
-  <img
-    class="img-fluid rounded d-block mx-auto"
-    src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"
-  />
-  <div class="clearfix"></div>
-  <!-- l'allineamento è fatto da "d-block mx-auto" -->
-  <!-- m = margin, x = horizontal, -auto = same space left and right -->
+  <div class="row">
+    <div class="col">
+      <h2>Allineamo l'immagine al centro</h2>
+      <img style="width: 20%"
+        class="img-fluid rounded d-block mx-auto"
+        src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"
+      />
+      <div class="clearfix"></div>
+      <!-- l'allineamento è fatto da "d-block mx-auto" -->
+      <!-- m = margin, x = horizontal, -auto = same space left and right -->
+    </div>
+  </div>
 
 </div>
