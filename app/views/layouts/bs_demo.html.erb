@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mockups</title>
+    <title><%= yield(:html_head_title) %> | Baseline7_0</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-<!--
     <style>
       [class*="container"] {
         background-color: #91A181;
@@ -21,13 +20,15 @@
         border: 1px solid #DA8D6E;
       }
     </style>
--->
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "actiontext", "data-turbo-track": "reload" %> <!--to fix broken UI adding bootstrap-->
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+    <% if notice %><p class="alert alert-info"><%= notice %></p><% end %>
+    <% if alert %><p class="alert alert-warning"><%= alert %></p><% end %>
     <%= yield %>
   </body>
 </html>

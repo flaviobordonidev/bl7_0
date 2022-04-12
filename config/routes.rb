@@ -16,7 +16,7 @@ Rails.application.routes.draw do
 
   get 'mockups/page_a'
   get 'mockups/page_b'
-  get 'mockups/bs_grid_a'
+  get 'mockups/bs_grid'
   get 'mockups/bs_grid_b'
   get 'mockups/bs_buttons'
   get 'mockups/bs_cards_and_panels'
