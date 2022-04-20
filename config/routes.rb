@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get 'mockups/page_a'
   get 'mockups/page_b'
   get 'mockups/bs_grid'
-  get 'mockups/bs_grid_b'
+  get 'mockups/bs_gutter'
   get 'mockups/bs_buttons'
   get 'mockups/bs_cards_and_panels'
   get 'mockups/bs_images'
@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   get 'mockups/ud_home'
   get 'mockups/ud_news'
   get 'mockups/ud_tema'
+  get 'mockups/edu_index_4'
   #get 'eg_posts', to:'eg_posts#index', as: :user_root #creates user_root_path (default path after sign_in)
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

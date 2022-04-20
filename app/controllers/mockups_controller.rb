@@ -10,28 +10,23 @@ class MockupsController < ApplicationController
     render layout: 'bs_demo'
   end
 
-  def bs_grid_b
-    #render layout: 'mockup'
+  def bs_gutter
     render layout: 'bs_demo'
   end
 
   def bs_buttons
-    #render layout: 'mockup'
     render layout: 'bs_demo'
   end
 
   def bs_cards_and_panels
-    #render layout: 'mockup'
     render layout: 'bs_demo'
   end
 
   def bs_images
-    #render layout: 'mockup'
     render layout: 'bs_demo'
   end
 
   def bs_icons
-    #render layout: 'mockup'
     render layout: 'bs_demo'
   end
 
@@ -49,5 +44,9 @@ class MockupsController < ApplicationController
 
   def ud_tema
     render layout: 'mockup'
+  end
+
+  def edu_index_4
+    render layout: 'edu_demo'
   end
 end
