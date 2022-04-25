@@ -49,4 +49,8 @@ class MockupsController < ApplicationController
   def edu_index_4
     render layout: 'edu_demo'
   end
+
+  def stimulus_demo
+    render layout: 'mockup'
+  end
 end

@@ -27,6 +27,7 @@ Rails.application.routes.draw do
   get 'mockups/ud_news'
   get 'mockups/ud_tema'
   get 'mockups/edu_index_4'
+  get 'mockups/stimulus_demo'
   #get 'eg_posts', to:'eg_posts#index', as: :user_root #creates user_root_path (default path after sign_in)
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

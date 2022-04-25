@@ -12,3 +12,5 @@ document.addEventListener("turbo:load", () => {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
 })
+
+//import "edu/functions.js"

@@ -13,12 +13,22 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "actiontext", "data-turbo-track": "reload" %> <!--to fix broken UI adding bootstrap-->
+    <%= stylesheet_link_tag "edu/scss/style", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%#= javascript_import_module_tag "edu/functions.js" %>
+
   </head>
 
   <body>
     <% if notice %><p class="alert alert-info"><%= notice %></p><% end %>
     <% if alert %><p class="alert alert-warning"><%= alert %></p><% end %>
     <%= yield %>
+
+    <!-- Template Functions -->
+    <!--<script src="assets/js/functions.js"></script>-->
+    <%#= javascript_include_tag 'functions.js', "data-turbo-track": "reload" %>
+    <%= javascript_include_tag 'functions.js' %>
+    <%#= javascript_import_module_tag "edu/functions.js" %>
+
   </body>
 </html>
