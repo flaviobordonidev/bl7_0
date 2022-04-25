@@ -4,4 +4,3 @@
 //= link_tree ../../../vendor/javascript .js
 
  //= link edu/scss/style.css
- //= link functions.js
