@@ -1,0 +1,46 @@
+<!-- start post content section -->
+<section class="wow fadeIn">
+  <div class="container-fluid padding-five-lr"> 
+    <div class="row equalize xs-equalize-auto">
+      <% posts.each do |post| %>
+        <!-- start post item -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin-80px-bottom sm-margin-50px-bottom xs-margin-30px-bottom wow fadeInUp">
+          <div class="blog-post blog-post-style2">
+            <div class="blog-post-images overflow-hidden margin-25px-bottom xs-margin-15px-bottom">
+              <a href="blog-post-layout-01.html">
+                <%#= image_tag "pofo/blog-img98.jpg", alt: "" %>
+                <%= image_tag post.main_image if post.main_image.attached?  %>
+              </a>
+            </div>
+            <div class="post-details">
+              <a href="blog-post-layout-01.html" class="post-title text-medium text-extra-dark-gray width-90 display-block md-width-100"><%= post.incipit %></a>
+              <div class="separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb xs-margin-15px-tb"></div>
+              <div class="author">
+                <%= image_tag "pofo/avtar-01.jpg", alt: "", class: "border-radius-100" %>
+                <span class="text-medium-gray text-uppercase text-extra-small padding-15px-left display-inline-block">by <a href="blog-grid.html" class="text-medium-gray">Jay Benjamin</a>&nbsp;&nbsp;|&nbsp;&nbsp;20 April 2017</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end post item -->
+      <% end %>
+    </div>
+    <!-- start pagination -->
+    <div class=" text-center margin-100px-top sm-margin-50px-top wow fadeInUp">
+        <div class="pagination text-small text-uppercase text-extra-dark-gray">
+            <%#= sanitize pagy_bootstrap_nav(@pagy) %>
+            <%= render 'pagy/nav_pofo', pagy: @pagy %>
+            <!--<ul>-->
+            <!--    <li><a href="blog-clean-full-width.html#"><i class="fas fa-long-arrow-alt-left margin-5px-right xs-display-none"></i> Prev</a></li>-->
+            <!--    <li class="active"><a href="blog-clean-full-width.html#">1</a></li>-->
+            <!--    <li><a href="blog-clean-full-width.html#">2</a></li>-->
+            <!--    <li><a href="blog-clean-full-width.html#">3</a></li>-->
+            <!--    <li><a href="blog-clean-full-width.html#">Next <i class="fas fa-long-arrow-alt-right margin-5px-left xs-display-none"></i></a></li>-->
+            <!--</ul>-->
+        </div>
+    </div>
+    <!-- end pagination -->
+
+  </div>
+</section>
+<!-- end post content section -->

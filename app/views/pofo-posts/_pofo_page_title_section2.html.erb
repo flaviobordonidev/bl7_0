@@ -1,0 +1,30 @@
+<!-- start page title section -->
+<section class="wow fadeIn parallax" data-stellar-background-ratio="0.5" style="background-image:url('<%= post.main_image.attached? ? url_for(@post.main_image) : image_path('pofo/parallax-bg55.jpg') %>');">
+    <div class="opacity-medium bg-extra-dark-gray"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 one-second-screen display-table page-title-large">
+                <div class="display-table-cell vertical-align-middle text-center">
+                    <!-- start page title -->
+                    <h1 class="text-white alt-font font-weight-600 margin-10px-bottom"><%= post.title %></h1>
+                    <!-- end page title -->
+                    <!-- start sub title -->
+                    <span class="text-white opacity6 alt-font no-margin-bottom text-uppercase text-small">
+                        <%= l @post.published_at, format: :short if @post.published_at.present? %>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        by <a href="blog-masonry.html" class="text-white"><%= @post.user.name %></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        
+                        <% @post.tags.each do |tag| %>
+                          <%#= tag == @post.tags.last ? "#{tag.name}" : "#{tag.name}," %>
+                          <%#= tag == @post.tags.last ? sanitize("<a href='blog-masonry.html' class='text-white'>#{tag.name}</a>") : sanitize("<a href='blog-masonry.html' class='text-white'>#{tag.name}</a>,") %>
+                          <%= tag == post.tags.last ? link_to("#{tag.name}", root_path, class: 'text-white') : link_to("#{tag.name},", root_path, class: 'text-white') %>
+                        <% end %>
+
+                    </span>
+                    <!--<span class="text-white opacity6 alt-font no-margin-bottom text-uppercase text-small"><%#= post.updated_at %>25 April 2017&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;by <a href="blog-masonry.html" class="text-white">Jay Benjamin</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="blog-masonry.html" class="text-white">Design</a>, <a href="blog-masonry.html" class="text-white">Branding</a></span>-->
+                    <!-- end sub title -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end page title section -->

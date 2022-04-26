@@ -34,19 +34,24 @@ class MockupsController < ApplicationController
     render layout: 'mockup'
   end
 
-  def ud_home
+  def bs_ud_home
     render layout: 'mockup'
   end
 
-  def ud_news
+  def bs_ud_news
     render layout: 'mockup'
   end
 
-  def ud_tema
+  def bs_ud_tema
     render layout: 'mockup'
   end
 
   def edu_index_4
+    render layout: 'edu_demo'
+  end
+
+  def edu_ud_list
+    #UbuntuDream: list
     render layout: 'edu_demo'
   end
 
