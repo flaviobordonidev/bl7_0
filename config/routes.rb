@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :lessons
 
   namespace :authors do
     resources :eg_posts, :except => [:show] do
