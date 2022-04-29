@@ -1,4 +1,4 @@
-class Lesson < ApplicationRecord
+class Step < ApplicationRecord
   # == Constants ============================================================
   
   # == Extensions ===========================================================
@@ -7,8 +7,8 @@ class Lesson < ApplicationRecord
 
   # == Relationships ========================================================
 
-  ## one-to-many
-  has_many :steps, dependent: :destroy
+  ## many-to-one
+  belongs_to :lesson
 
   # == Validations ==========================================================
 
