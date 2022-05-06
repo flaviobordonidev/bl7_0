@@ -6,9 +6,12 @@
   <% @steps.each do |step| %>
     <%= render step %>
     <p>
-      <%= link_to "Show this step", step %>
+      <%#= link_to "Show this step", step %>
+      <%= link_to "Show this step", lesson_step_path(@lesson, step) %>
+      <%= link_to 'Show this Lesson', [@lesson] %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New step", new_step_path %>
+<%#= link_to "New step", new_step_path %>
+<%= link_to 'New Step', new_lesson_step_path(@lesson) %>

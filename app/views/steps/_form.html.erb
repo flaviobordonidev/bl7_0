@@ -1,4 +1,5 @@
-<%= form_with(model: step) do |form| %>
+<%#= form_with(model: step) do |form| %>
+<%= form_with(model: [@lesson, step]) do |form| %>
   <% if step.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(step.errors.count, "error") %> prohibited this step from being saved:</h2>

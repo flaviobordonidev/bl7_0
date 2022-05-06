@@ -58,4 +58,8 @@ class MockupsController < ApplicationController
   def stimulus_demo
     render layout: 'mockup'
   end
+
+  def youtube_player
+    render layout: 'empty'
+  end
 end
