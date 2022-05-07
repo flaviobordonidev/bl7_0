@@ -21,6 +21,7 @@ class User < ApplicationRecord
 
   ## association one-to-many
   has_many :eg_posts
+  has_many :answers
 
   # == Validations ==========================================================
 

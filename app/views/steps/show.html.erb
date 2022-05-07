@@ -34,7 +34,8 @@
   <ul>
     <% @step.answers.each do |answer| %>
       <li>
-        <%= answer.content %>
+        <%= answer.content %> - by <%= answer.user.name %>
+        <%= answer.content %> <%= "- by #{answer.user.name}" if answer.user.present? %>
       </li>
     <% end %>
   </ul>
