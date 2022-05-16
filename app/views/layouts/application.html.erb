@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    	<!-- Meta Tags -->
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta name="author" content="Flavio Bordoni">
+  	<meta name="description" content="UbuntuDream - UD, Visualization and Education">
     <title><%= yield(:html_head_title) %> | Baseline7_0</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "actiontext", "data-turbo-track": "reload" %> <!--to fix broken UI adding bootstrap-->
+    <%= stylesheet_link_tag "edu/scss/style", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <!-- Template Functions -->
+    <%#= javascript_import_module_tag "edu/functions.js" %>
+    <%= javascript_include_tag 'functions.js', "data-turbo-track": "reload" %>
 
     <style>
     /*form-hidden*/
@@ -27,14 +39,11 @@
     }
     </style>
     
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "actiontext", "data-turbo-track": "reload" %> <!--to fix broken UI adding bootstrap-->
-    <%= javascript_importmap_tags %>
   </head>
 
   <body>
+    <%= yield %>
     <% if notice %><p class="alert alert-info"><%= notice %></p><% end %>
     <% if alert %><p class="alert alert-warning"><%= alert %></p><% end %>
-    <%= yield %>
   </body>
 </html>

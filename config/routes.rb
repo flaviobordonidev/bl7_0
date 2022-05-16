@@ -31,7 +31,10 @@ Rails.application.routes.draw do
   get 'mockups/bs_ud_news'
   get 'mockups/bs_ud_tema'
   get 'mockups/edu_index_4'
-  get 'mockups/edu_ud_list'
+  get 'mockups/edu_course_detail_min'
+  get 'mockups/ud_lessons_index'
+  get 'mockups/ud_lessons_show'
+  get 'mockups/ud_lessons_steps_show'
   get 'mockups/youtube_player'
   get 'mockups/stimulus_demo'
   #get 'eg_posts', to:'eg_posts#index', as: :user_root #creates user_root_path (default path after sign_in)

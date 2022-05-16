@@ -50,8 +50,22 @@ class MockupsController < ApplicationController
     render layout: 'edu_demo'
   end
 
-  def edu_ud_list
-    #UbuntuDream: list
+  def edu_course_detail_min
+    render layout: 'edu_demo'
+  end
+
+  def ud_lessons_index
+    #UbuntuDream: elenco lezioni
+    render layout: 'edu_demo'
+  end
+
+  def ud_lessons_show
+    #UbuntuDream: presentazione lezione
+    render layout: 'edu_demo'
+  end
+
+  def ud_lessons_steps_show
+    #UbuntuDream: passo della lezione con player-video e form domanda
     render layout: 'edu_demo'
   end
 

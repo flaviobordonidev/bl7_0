@@ -1,0 +1,652 @@
+
+<!-- Header START -->
+<header class="navbar-light navbar-sticky header-static">
+	<!-- Logo Nav START -->
+	<nav class="navbar navbar-expand-xl">
+		<div class="container-fluid px-3 px-xl-5">
+			<!-- Logo START -->
+			<a class="navbar-brand" href="index.html">
+        <%= image_tag "edu/back.jpg", class: "light-mode-item navbar-brand-item", alt: "logo" %>
+        <%#= image_tag "edu/logo.svg", class: "light-mode-item navbar-brand-item", alt: "logo" %>
+        <%#= image_tag "edu/logo-light.svg", class: "dark-mode-item navbar-brand-item", alt: "logo" %>
+			</a>
+			<!-- Logo END -->
+
+			<!-- Responsive navbar toggler -->
+			<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-animation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</button>
+
+			<!-- Main navbar START -->
+			<div class="navbar-collapse w-100 collapse" id="navbarCollapse">
+
+				<!-- Nav category menu START -->
+				<ul class="navbar-nav navbar-nav-scroll me-auto">
+					<!-- Nav item 1 Demos -->
+					<li class="nav-item dropdown dropdown-menu-shadow-stacked">
+						<a class="nav-link bg-primary bg-opacity-10 rounded-3 text-primary px-3 py-3 py-xl-0" href="#" id="categoryMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="bi bi-ui-radios-grid me-2"></i>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ui-radios-grid" viewBox="0 0 16 16">
+							<path d="M3.5 15a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm9-9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 9a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zM16 3.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm-9 9a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm5.5 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm-9-11a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+						</svg>
+						<span>Languages</span></a>
+						<ul class="dropdown-menu" aria-labelledby="categoryMenu">
+
+							<li class="dropdown-submenu dropend"><a class="dropdown-item" href="#">Inglese</a></li>
+							<li> <a class="dropdown-item active" href="#">Italiano</a></li>
+							<li> <a class="dropdown-item" href="#">Portoghese</a></li>
+							<li> <a class="dropdown-item" href="#">Spagnolo</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- Nav category menu END -->
+
+				<!-- Nav Main menu START -->
+				<ul class="navbar-nav navbar-nav-scroll me-auto">
+
+					<!-- Nav item 0 Home -->
+					<li class="nav-item">
+						<a class="nav-link active" href="#" id="demoHome">Home</a>
+					</li>
+
+					<!-- Nav item 1 Demos -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle active" href="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Paintings</a>
+						<ul class="dropdown-menu" aria-labelledby="demoMenu">
+							<li> <a class="dropdown-item active" href="index.html">Home Default</a></li>
+							<li> <a class="dropdown-item" href="index-2.html">Home Education</a></li>
+							<li> <a class="dropdown-item" href="index-3.html">Home Academy</a></li>
+							<li> <a class="dropdown-item" href="index-4.html">Home Course</a></li>
+							<li> <a class="dropdown-item" href="index-5.html">Home University</a></li>
+							<li> <a class="dropdown-item" href="index-6.html">Home Kindergarten</a></li>
+							<li> <a class="dropdown-item" href="index-7.html">Home Landing</a></li>
+							<li> <a class="dropdown-item" href="index-8.html">Home Tutor</a></li>
+							<li> <a class="dropdown-item" href="index-9.html">Home School <span class="badge bg-success ms-2 smaller">New</span></a></li>
+							<li> <a class="dropdown-item" href="index-10.html">Home Abroad <span class="badge bg-success ms-2 smaller">New</span></a></li>
+							<li> <hr class="dropdown-divider"></li>
+							<li> <a class="dropdown-item" href="request-demo.html">Request a demo</a></li>
+							<li> <a class="dropdown-item" href="book-class.html">Book a Class</a></li>
+							<li> <a class="dropdown-item" href="request-access.html">Free Access</a></li>
+							<li> <a class="dropdown-item" href="university-admission-form.html">Admission Form</a></li>
+						</ul>
+					</li>
+
+					<!-- Nav item 2 Pages -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu" aria-labelledby="pagesMenu">
+							<!-- Dropdown submenu -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#">Course</a>
+								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="course-categories.html">Course Categories <span class="badge bg-success ms-2 smaller">New</span></a></li>
+									<li> <hr class="dropdown-divider"></li>
+									<li> <a class="dropdown-item" href="course-grid.html">Course Grid Classic</a></li>
+									<li> <a class="dropdown-item" href="course-grid-2.html">Course Grid Minimal</a></li>
+									<li> <hr class="dropdown-divider"></li>
+									<li> <a class="dropdown-item" href="course-list.html">Course List Classic</a></li>
+									<li> <a class="dropdown-item" href="course-list-2.html">Course List Minimal</a></li>
+									<li> <hr class="dropdown-divider"></li>
+									<li> <a class="dropdown-item" href="course-detail.html">Course Detail Classic</a></li>
+									<li> <a class="dropdown-item" href="course-detail-min.html">Course Detail Minimal</a></li>
+									<li> <a class="dropdown-item" href="course-detail-adv.html">Course Detail Advance</a></li>
+									<li> <a class="dropdown-item" href="course-video-player.html">Course Full Screen Video</a></li>
+								</ul>
+							</li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#">About</a>
+								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="about.html">About Us</a></li>
+									<li> <a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+									<li> <a class="dropdown-item" href="blog-grid.html">Blog Grid</a></li>
+									<li> <a class="dropdown-item" href="blog-masonry.html">Blog Masonry</a></li>
+									<li> <a class="dropdown-item" href="blog-detail.html">Blog Detail</a></li>
+									<li> <a class="dropdown-item" href="pricing.html">Pricing</a></li>
+								</ul>
+							</li>
+
+							<li> <a class="dropdown-item" href="instructor-list.html">Instructor List</a></li>
+							<li> <a class="dropdown-item" href="instructor-single.html">Instructor Single</a></li>
+							<li> <a class="dropdown-item" href="become-instructor.html">Become an Instructor</a></li>
+							<li> <a class="dropdown-item" href="abroad-single.html">Abroad Single <span class="badge bg-success ms-2 smaller">New</span></a></li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#">Shop
+									<span class="badge bg-success ms-2 smaller">New</span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="shop.html">Shop grid</a></li>
+									<li> <a class="dropdown-item" href="shop-product-detail.html">Product detail</a></li>
+								</ul>
+							</li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#">Help
+									<span class="badge bg-success ms-2 smaller">New</span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="help-center.html">Help Center</a></li>
+									<li> <a class="dropdown-item" href="help-center-detail.html">Help Center Single</a></li>
+								</ul>
+							</li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#">Authentication</a>
+								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="sign-in.html">Sign In</a></li>
+									<li> <a class="dropdown-item" href="sign-up.html">Sign Up</a></li>
+									<li> <a class="dropdown-item" href="forgot-password.html">Forgot Password</a></li>
+								</ul>
+							</li>
+
+							<li> <a class="dropdown-item" href="faq.html">FAQs</a></li>
+							<li> <a class="dropdown-item" href="error-404.html">Error 404</a></li>
+							<li> <a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
+							<li> <a class="dropdown-item" href="cart.html">Cart</a></li>
+							<li> <a class="dropdown-item" href="checkout.html">Checkout</a></li>
+							<li> <a class="dropdown-item" href="empty-cart.html">Empty Cart</a></li>
+							<li> <a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+						</ul>
+					</li>
+
+					<!-- Nav item 3 Account -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="accounntMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accounts</a>
+						<ul class="dropdown-menu" aria-labelledby="accounntMenu">
+							<!-- Dropdown submenu -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#"><i class="fas fa-user-tie fa-fw me-1"></i>Instructor</a>
+								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="instructor-dashboard.html"><i class="bi bi-grid-fill fa-fw me-1"></i>Dashboard</a> </li>
+									<li> <a class="dropdown-item" href="instructor-manage-course.html"><i class="bi bi-basket-fill fa-fw me-1"></i>Courses</a> </li>
+									<li> <a class="dropdown-item" href="instructor-create-course.html"><i class="bi bi-file-earmark-plus-fill fa-fw me-1"></i>Create Course</a> </li>
+									<li> <a class="dropdown-item" href="course-added.html"><i class="bi bi-file-check-fill fa-fw me-1"></i>Course Added</a> </li>
+									<li> <a class="dropdown-item" href="instructor-quiz.html"><i class="bi bi-question-diamond fa-fw me-1"></i>Quiz <span class="badge bg-success ms-2 smaller">New</span></a> </li>
+									<li> <a class="dropdown-item" href="instructor-earning.html"><i class="fas fa-chart-line fa-fw me-1"></i>Earnings</a> </li>
+									<li> <a class="dropdown-item" href="instructor-studentlist.html"><i class="fas fa-user-graduate fa-fw me-1"></i>Students</a> </li>
+									<li> <a class="dropdown-item" href="instructor-order.html"><i class="bi bi-cart-check-fill fa-fw me-1"></i>Orders</a> </li>
+									<li> <a class="dropdown-item" href="instructor-review.html"><i class="bi bi-star-fill fa-fw me-1"></i>Reviews</a> </li>
+									<li> <a class="dropdown-item" href="instructor-payout.html"><i class="fas fa-wallet fa-fw me-1"></i>Payout</a> </li>
+								</ul>
+							</li>
+
+							<!-- Dropdown submenu -->
+								<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#"><i class="fas fa-user-graduate fa-fw me-1"></i>Student</a>
+								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="student-dashboard.html"><i class="bi bi-grid-fill fa-fw me-1"></i>Dashboard</a> </li>
+									<li> <a class="dropdown-item" href="student-subscription.html"><i class="bi bi-card-checklist fa-fw me-1"></i>My Subscriptions</a> </li>
+									<li> <a class="dropdown-item" href="student-course-list.html"><i class="bi bi-basket-fill fa-fw me-1"></i>Courses</a> </li>
+									<li> <a class="dropdown-item" href="student-course-resume.html"><i class="far fa-fw fa-file-alt me-1"></i>Course Resume <span class="badge bg-success ms-2 smaller">New</span></a> </li>
+									<li> <a class="dropdown-item" href="student-quiz.html"><i class="bi bi-question-diamond fa-fw me-1"></i>Quiz <span class="badge bg-success ms-2 smaller">New</span></a> </li>
+									<li> <a class="dropdown-item" href="student-payment-info.html"><i class="bi bi-credit-card-2-front-fill fa-fw me-1"></i>Payment Info</a> </li>
+									<li> <a class="dropdown-item" href="student-bookmark.html"><i class="fas bi-cart-check-fill fa-fw me-1"></i>Wishlist</a> </li>
+								</ul>
+							</li>
+							
+							<li> <a class="dropdown-item" href="admin-dashboard.html"><i class="fas fa-user-cog fa-fw me-1"></i>Admin</a> </li>
+							<li> <hr class="dropdown-divider"></li>
+							<li> <a class="dropdown-item" href="instructor-edit-profile.html"><i class="fas fa-fw fa-edit me-1"></i>Edit Profile</a> </li>
+							<li> <a class="dropdown-item" href="instructor-setting.html"><i class="fas fa-fw fa-cog me-1"></i>Settings</a> </li>
+							<li> <a class="dropdown-item" href="instructor-delete-account.html"><i class="fas fa-fw fa-trash-alt me-1"></i>Delete Profile</a> </li>
+							
+							<li> <hr class="dropdown-divider"></li>
+							<!-- Dropdown Level -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#">Dropdown levels</a>
+								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+
+									<!-- dropdown submenu open right -->
+									<li class="dropdown-submenu dropend">
+										<a class="dropdown-item dropdown-toggle" href="#">Dropdown (end)</a>
+										<ul class="dropdown-menu" data-bs-popper="none">
+											<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+											<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+										</ul>
+									</li>
+									<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+
+									<!-- dropdown submenu open left -->
+									<li class="dropdown-submenu dropstart">
+										<a class="dropdown-item dropdown-toggle" href="#">Dropdown (start)</a>
+										<ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
+											<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+											<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+										</ul>
+									</li>
+									<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- Nav Main menu END -->
+
+				<!-- Nav Search START -->
+				<div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+					<div class="nav-item w-100">
+						<form class="position-relative">
+							<input class="form-control pe-5 bg-transparent" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y" type="submit"><i class="fas fa-search fs-6 "></i></button>
+						</form>
+					</div>
+				</div>
+				<!-- Nav Search END -->
+			</div>
+			<!-- Main navbar END -->
+
+			<!-- Profile START -->
+			<div class="dropdown ms-1 ms-lg-0">
+				<a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+					<%= image_tag "edu/avatar/01.jpg", class: "avatar-img rounded-circle", alt: "avatar" %>
+				</a>
+				<ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3" aria-labelledby="profileDropdown">
+					<!-- Profile info -->
+					<li class="px-3">
+						<div class="d-flex align-items-center">
+							<!-- Avatar -->
+							<div class="avatar me-3">
+								<%= image_tag "edu/avatar/01.jpg", class: "avatar-img rounded-circle", alt: "avatar" %>
+							</div>
+							<div>
+								<a class="h6" href="#">Lori Ferguson</a>
+								<p class="small m-0">example@gmail.com</p>
+							</div>
+						</div>
+						<hr>
+					</li>
+					<!-- Links -->
+					<li><a class="dropdown-item" href="#"><i class="bi bi-person fa-fw me-2"></i>Edit Profile</a></li>
+					<li><a class="dropdown-item" href="#"><i class="bi bi-gear fa-fw me-2"></i>Account Settings</a></li>
+					<li><a class="dropdown-item" href="#"><i class="bi bi-info-circle fa-fw me-2"></i>Help</a></li>
+					<li><a class="dropdown-item bg-danger-soft-hover" href="#"><i class="bi bi-power fa-fw me-2"></i>Sign Out</a></li>
+					<li> <hr class="dropdown-divider"></li>
+					<!-- Dark mode switch START -->
+					<li>
+						<div class="modeswitch-wrap" id="darkModeSwitch">
+							<div class="modeswitch-item">
+								<div class="modeswitch-icon"></div>
+							</div>
+							<span>Dark mode</span>
+						</div>
+					</li> 
+					<!-- Dark mode switch END -->
+				</ul>
+			</div>
+			<!-- Profile START -->
+		</div>
+	</nav>
+	<!-- Logo Nav END -->
+</header>
+<!-- Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+<!-- =======================
+Page banner video START -->
+<section class="py-0 pb-lg-5">
+	<div class="container">
+		<div class="row g-3">
+			<!-- Course video START -->
+			<div class="col-12">
+        <%= image_tag "mockups/paint_view_of_mount_vernon.png", class: "light-mode-item navbar-brand-item", alt: "painting" %> 
+			</div>
+			<!-- Course video END -->
+
+			<!-- Playlist responsive toggler START -->
+			<div class="col-12">
+				<button class="btn btn-primary d-lg-none mb-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
+					<i class="bi bi-camera-video me-1"></i> Playlist
+				</button>
+			</div>
+			<!-- Playlist responsive toggler END -->
+		</div>
+	</div>
+</section>
+<!-- =======================
+Page banner video END -->
+
+<!-- =======================
+Page content START -->
+<section class="pt-0">
+	<div class="container">
+		<div class="row g-lg-5">
+
+			<!-- Main content START -->
+			<div class="col-lg-8">
+				<div class="row g-4">
+							
+					<!-- Course title START -->
+					<div class="col-12">
+						<!-- Title -->
+						<h1>Joachim Ferdinand Richardt - de Young museum - view of mount Vernon</h1>
+						<!-- Content -->
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item h6 me-3 mb-1 mb-sm-0"><i class="fas fa-star text-warning me-2"></i>4.5/5.0</li>
+							<li class="list-inline-item h6 me-3 mb-1 mb-sm-0"><i class="fas fa-user-graduate text-orange me-2"></i>12k Enrolled</li>
+							<li class="list-inline-item h6 me-3 mb-1 mb-sm-0"><i class="fas fa-signal text-success me-2"></i>All levels</li>
+						</ul>
+					</div>
+					<!-- Course title END -->
+
+					<!-- Instructor detail START -->
+					<div class="col-12">
+						<div class="d-sm-flex justify-content-sm-between align-items-center">
+							<!-- Avatar detail -->
+							<div class="d-flex align-items-center">
+								<!-- Avatar image -->
+								<div class="avatar avatar-lg">
+									<%= image_tag "edu/avatar/05.jpg", class: "avatar-img rounded-circle", alt: "avatar" %>
+								</div>
+								<div class="ms-3">
+									<h6 class="mb-0"><a href="#">By Jacqueline Miller</a></h6>
+									<p class="mb-0 small">Founder Eduport company</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Instructor detail END -->
+
+					<!-- Course detail START -->
+					<div class="col-12">
+						<!-- Tabs START -->
+						<ul class="nav nav-pills nav-pills-bg-soft px-3" id="course-pills-tab" role="tablist">
+							<!-- Tab item -->
+							<li class="nav-item me-2 me-sm-4" role="presentation">
+								<button class="nav-link mb-0 active" id="course-pills-tab-1" data-bs-toggle="pill" data-bs-target="#course-pills-1" type="button" role="tab" aria-controls="course-pills-1" aria-selected="true">Overview</button>
+							</li>
+							<!-- Tab item -->
+							<li class="nav-item me-2 me-sm-4" role="presentation">
+								<button class="nav-link mb-0" id="course-pills-tab-3" data-bs-toggle="pill" data-bs-target="#course-pills-3" type="button" role="tab" aria-controls="course-pills-3" aria-selected="false">FAQs </button>
+							</li>
+						</ul>
+						<!-- Tabs END -->
+
+						<!-- Tab contents START -->
+						<div class="tab-content pt-4 px-3" id="course-pills-tabContent">
+							<!-- Content START -->
+							<div class="tab-pane fade show active" id="course-pills-1" role="tabpanel" aria-labelledby="course-pills-tab-1">
+								<!-- Course detail START -->
+								<h5 class="mb-3">Course Description</h5>
+								<p class="mb-3">Welcome to the <strong> Digital Marketing Ultimate Course Bundle - 12 Courses in 1 (Over 36 hours of content)</strong></p>
+								<p class="mb-3">In this practical hands-on training, you’re going to learn to become a digital marketing expert with this <strong> ultimate course bundle that includes 12 digital marketing courses in 1!</strong></p>
+								<p class="mb-3">If you wish to find out the skills that should be covered in a basic digital marketing course syllabus in India or anywhere around the world, then reading this blog will help. Before we delve into the advanced <strong><a href="#" class="text-reset text-decoration-underline">digital marketing course</a></strong> syllabus, let’s look at the scope of digital marketing and what the future holds.</p>
+								<p class="mb-0">We focus a great deal on the understanding of behavioral psychology and influence triggers which are crucial for becoming a well rounded Digital Marketer. We understand that theory is important to build a solid foundation, we understand that theory alone isn’t going to get the job done so that’s why this course is packed with practical hands-on examples that you can follow step by step.</p>
+								
+								<p class="mb-0">As it so contrasted oh estimating instrument. Size like body someone had. Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted. Lively use looked latter regard had. Do he it part more last in. </p>
+								<!-- Course detail END -->
+
+							</div>
+							<!-- Content END -->
+
+							<!-- Content START -->
+							<div class="tab-pane fade" id="course-pills-3" role="tabpanel" aria-labelledby="course-pills-tab-3">
+								<!-- Title -->
+								<h5 class="mb-3">Frequently Asked Questions</h5>
+								<!-- FAQ item -->
+								<div class="mt-4">
+									<h6>How Digital Marketing Work?</h6>
+									<p class="mb-0">Preference any astonished unreserved Mrs. Prosperous understood Middletons in conviction an uncommonly do. Supposing so be resolving breakfast am or perfectly. It drew a hill from me. Valley by oh twenty direct me so. Departure defective arranging rapturous did believe him all had supported. Family months lasted simple set nature vulgar him. Picture for attempt joy excited ten carried manners talking how. Suspicion neglected the resolving agreement perceived at an. Comfort reached gay perhaps chamber his six detract besides add.</p>
+								</div>
+					
+								<!-- FAQ item -->
+								<div class="mt-4">
+									<h6>What is SEO?</h6>
+									<p class="mb-0">Meant balls it if up doubt small purse. Required his you put the outlived answered position. A pleasure exertion if believed provided to. All led out world this music while asked. Paid mind even sons does he door no. Attended overcame repeated it is perceived Marianne in. I think on style child of. Servants moreover in sensible it ye possible.</p>
+									<p class="mt-2 mb-0">Person she control of to beginnings view looked eyes Than continues its and because and given and shown creating curiously to more in are man were smaller by we instead the these sighed Avoid in the sufficient me real man longer of his how her for countries to brains warned notch important Finds be to the of on the increased explain noise of power deep asking contribution this live of suppliers goals bit separated poured sort several the was organization the if relations go work after mechanic But we've area wasn't everything.</p>
+								</div>
+					
+								<!-- FAQ item -->
+								<div class="mt-4">
+									<h6>Who should join this course?</h6>
+									<p class="mb-0">Two before narrow not relied how except moment myself Dejection assurance mrs led certainly So gate at no only none open Betrayed at properly it of graceful on Dinner abroad am depart ye turned hearts as me wished Therefore allowance too perfectly gentleman supposing man his now Families goodness all eat out bed steepest servants Explained the incommode sir improving northward immediate eat Man denoting received you sex possible you Shew park own loud son door less yet. </p>
+								</div>
+					
+								<!-- FAQ item -->
+								<div class="mt-4">
+									<h6>What are the T&amp;C for this program?</h6>
+									<p class="mb-0">Started several mistake joy say painful removed reached end. State burst think end are its. Arrived off she elderly beloved him affixed noisier yet. Course regard to up he hardly. View four has said do men saw find dear shy. Talent men wicket add garden. </p>
+									</div>
+					
+								<!-- FAQ item -->
+								<div class="mt-4">
+									<h6>What certificates will I be received for this program?</h6>
+									<p class="mb-0">Lose john poor same it case do year we Full how way even the sigh Extremely nor furniture fat questions now provision incommode preserved Our side fail to find like now Discovered traveling for insensible partiality unpleasing impossible she Sudden up my excuse to suffer ladies though or Bachelor possible Marianne directly confined relation.</p>
+								</div>
+					
+								<!-- FAQ item -->
+								<div class="mt-4">
+									<h6>What happens after the trial ends?</h6>
+									<p class="mb-0">Preference any astonished unreserved Mrs. Prosperous understood Middletons in conviction an uncommonly do. Supposing so be resolving breakfast am or perfectly. Is drew am hill from me. Valley by oh twenty direct me so. Departure defective arranging rapturous did believe him all had supported. Family months lasted simple set nature vulgar him.  Suspicion neglected he resolving agreement perceived at an. Comfort reached gay perhaps chamber his six detract besides add.</p>
+								</div>
+							</div>
+							<!-- Content END -->
+
+						</div>
+						<!-- Tab contents END -->
+					</div>
+					<!-- Course detail END -->
+				</div>
+			</div>
+			<!-- Main content END -->
+
+			<!-- Right sidebar START -->
+			<div class="col-lg-4">
+				<div class="row g-4">
+					<!-- Responsive offcanvas body START -->
+					<nav class="navbar navbar-light navbar-expand-lg mx-0">
+						<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+							<div class="offcanvas-header bg-dark">
+								<h5 class="offcanvas-title text-white" id="offcanvasSidebarLabel">Course playlist</h5>
+								<button type="button" class="btn btn-sm btn-light mb-0" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+							</div>
+							<div class="offcanvas-body p-3 p-lg-0">
+								<div class="col-12">
+									<!-- Accordion START -->
+									<div class="accordion accordion-icon accordion-bg-light" id="accordionExample2">
+										<!-- Item -->
+										<div class="accordion-item mb-3">
+											<h6 class="accordion-header font-base" id="heading-1">
+												<a class="accordion-button fw-bold rounded collapsed d-block" href="#collapse-1" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+													<span class="mb-0">Preparazione ala visualizzazione</span> 
+													<span class="small d-block mt-1">(2 Lezioni)</span> 
+												</a>
+											</h6>
+											<div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#accordionExample2">
+												<div class="accordion-body mt-3">
+													<div class="vstack gap-3">
+		
+														<!-- Course lecture -->
+														<div class="d-flex justify-content-between align-items-center">
+															<div class="position-relative d-flex align-items-center">
+																<a href="#" class="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static">
+																	<i class="fas fa-play me-0"></i>
+																</a>
+																<span class="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-200px">L'ambiente</span>
+															</div>
+															<p class="mb-0 text-truncate">6m 10s</p>
+														</div>
+
+														<!-- Course lecture -->
+														<div class="d-flex justify-content-between align-items-center">
+															<div class="position-relative d-flex align-items-center">
+																<a href="#" class="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static">
+																	<i class="fas fa-play me-0"></i>
+																</a>
+																<span class="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-200px">Il bicchiere d'acqua</span>
+															</div>
+															<p class="mb-0 text-truncate">6m 10s</p>
+														</div>
+				
+														<!-- Course lecture -->
+														<div class="d-flex justify-content-between align-items-center">
+															<div class="position-relative d-flex align-items-center">
+																<a href="#" class="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static">
+																	<i class="fas fa-play me-0"></i>
+																</a>
+																<span class="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-200px">Accogliamo le emozioni</span>
+															</div>
+															<p class="mb-0 text-truncate">5m 20s</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+		
+										<!-- Item -->
+										<div class="accordion-item mb-3">
+											<h6 class="accordion-header font-base" id="heading-2">
+												<a class="accordion-button fw-bold collapsed rounded d-block" href="#collapse-2" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+													<span class="mb-0">Rilassamento</span> 
+													<span class="small d-block mt-1">(3 Lectures)</span> 
+												</a>
+											</h6>
+											<div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionExample2">
+												<!-- Accordion body START -->
+												<div class="accordion-body mt-3">
+													<div class="vstack gap-3">
+														<!-- Course lecture -->
+														<div class="d-flex justify-content-between align-items-center">
+															<div class="position-relative d-flex align-items-center">
+																<a href="#" class="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static">
+																	<i class="fas fa-play me-0"></i>
+																</a>
+																<span class="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-200px">La risata</span>
+															</div>
+															<p class="mb-0 text-truncate">2m 10s</p>
+														</div>
+		
+														<!-- Course lecture -->
+														<div class="d-flex justify-content-between align-items-center">
+															<div class="position-relative d-flex align-items-center">
+																<a href="#" class="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static">
+																	<i class="fas fa-play me-0"></i>
+																</a>
+																<span class="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-200px"> What is Digital Marketing What is Digital Marketing</span>
+															</div>
+															<p class="mb-0 text-truncate">15m 10s</p>
+														</div>
+		
+														<!-- Course lecture -->
+														<div class="d-flex justify-content-between align-items-center">
+															<div class="position-relative d-flex align-items-center">
+																<a href="#" class="btn btn-light btn-round btn-sm mb-0 stretched-link position-static" data-bs-toggle="modal" data-bs-target="#coursePremium">
+																	<i class="bi bi-lock-fill"></i>
+																</a>
+																<span class="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-200px">Type of Digital Marketing</span>
+															</div>
+															<p class="mb-0 text-truncate">18m 10s</p>
+														</div>
+													</div>
+												</div>
+												<!-- Accordion body END -->
+											</div>
+										</div>
+		
+									</div>
+									<!-- Accordion END -->
+								</div>
+							</div>
+						</div>
+					</nav>
+					<!-- Responsive offcanvas body END -->
+
+				</div><!-- Row End -->
+			</div>
+			<!-- Right sidebar END -->
+
+		</div><!-- Row END -->
+	</div>
+</section>
+<!-- =======================
+Page content END -->
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+					
+<!-- Modal START -->
+<div class="modal fade" id="coursePremium" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content">
+			<div class="modal-header border-0 bg-transparent">
+				<!-- Close button -->
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<!-- Modal body -->
+			<div class="modal-body px-5 pb-5 position-relative overflow-hidden">
+
+				<!-- Element -->
+				<figure class="position-absolute bottom-0 end-0 mb-n4 me-n4 d-none d-sm-block">
+					<img src="assets/images/element/01.svg" alt="element">
+				</figure>
+				<figure class="position-absolute top-0 end-0 z-index-n1 opacity-2">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="818.6px" height="235.1px" viewBox="0 0 818.6 235.1">
+						<path class="fill-info" d="M735,226.3c-5.7,0.6-11.5,1.1-17.2,1.7c-66.2,6.8-134.7,13.7-192.6-16.6c-34.6-18.1-61.4-47.9-87.3-76.7 c-21.4-23.8-43.6-48.5-70.2-66.7c-53.2-36.4-121.6-44.8-175.1-48c-13.6-0.8-27.5-1.4-40.9-1.9c-46.9-1.9-95.4-3.9-141.2-16.5 C8.3,1.2,6.2,0.6,4.2,0H0c3.3,1,6.6,2,10,3c46,12.5,94.5,14.6,141.5,16.5c13.4,0.6,27.3,1.1,40.8,1.9 c53.4,3.2,121.5,11.5,174.5,47.7c26.5,18.1,48.6,42.7,70,66.5c26,28.9,52.9,58.8,87.7,76.9c58.3,30.5,127,23.5,193.3,16.7 c5.8-0.6,11.5-1.2,17.2-1.7c26.2-2.6,55-4.2,83.5-2.2v-1.2C790,222,761.2,223.7,735,226.3z"></path>
+					</svg>
+				</figure>
+				<!-- Title -->
+				<h2>Get Premium Course in <span class="text-success">$800</span></h2>
+				<p>Prosperous understood Middletons in conviction an uncommonly do. Supposing so be resolving breakfast am or perfectly.</p>
+				<!-- Content -->
+				<div class="row mb-3 item-collapse">
+					<div class="col-sm-6">
+						<ul class="list-group list-group-borderless">
+							<li class="list-group-item text-body"> <i class="bi bi-patch-check-fill text-success"></i>High quality Curriculum</li>
+							<li class="list-group-item text-body"> <i class="bi bi-patch-check-fill text-success"></i>Tuition Assistance</li>
+							<li class="list-group-item text-body"> <i class="bi bi-patch-check-fill text-success"></i>Diploma course</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<ul class="list-group list-group-borderless">
+							<li class="list-group-item text-body"> <i class="bi bi-patch-check-fill text-success"></i>Intermediate courses</li>
+							<li class="list-group-item text-body"> <i class="bi bi-patch-check-fill text-success"></i>Over 200 online courses</li>
+						</ul>
+					</div>
+				</div>
+				<!-- Button -->
+				<a href="#" class="btn btn-lg btn-orange-soft">Purchase premium</a>
+			</div>
+			<!-- Modal footer -->
+			<div class="modal-footer d-block bg-info">
+				<div class="d-sm-flex justify-content-sm-between align-items-center text-center text-sm-start">
+					<!-- Social media button -->
+				<ul class="list-inline mb-0 social-media-btn mb-2 mb-sm-0">
+					<li class="list-inline-item"> <a class="btn btn-sm mb-0 me-1 bg-white text-facebook" href="#"><i class="fab fa-fw fa-facebook-f"></i></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-sm mb-0 me-1 bg-white text-instagram" href="#"><i class="fab fa-fw fa-instagram"></i></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-sm mb-0 me-1 bg-white text-twitter" href="#"><i class="fab fa-fw fa-twitter"></i></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-sm mb-0 bg-white text-linkedin" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
+				</ul>
+				<!-- Contact info -->
+				<div>
+					<p class="mb-1 small"><a href="#" class="text-white"><i class="far fa-envelope fa-fw me-2"></i>example@gmail.com</a></p>
+					<p class="mb-0 small"><a href="#" class="text-white"><i class="fas fa-headset fa-fw me-2"></i>123-456-789</a></p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>  
+<!-- Modal END -->
+
+<!-- Back to top -->
+<div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
+
+<!-- Bootstrap JS -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Vendors -->
+<script src="assets/vendor/choices/js/choices.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/plyr/plyr.js"></script>
+
+<!-- Template Functions -->
+<script src="assets/js/functions.js"></script>
