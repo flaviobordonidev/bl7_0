@@ -4,3 +4,4 @@
 //= link_tree ../../../vendor/javascript .js
 
  //= link edu/scss/style.css
+ //= link edu/scss/style-dark.css

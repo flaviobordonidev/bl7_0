@@ -5,6 +5,9 @@ class Lesson < ApplicationRecord
 
   # == Attributes ===========================================================
 
+  ## Active Storage
+  has_one_attached :header_image
+
   # == Relationships ========================================================
 
   ## one-to-many
