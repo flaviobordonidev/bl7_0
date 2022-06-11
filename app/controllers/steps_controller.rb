@@ -10,6 +10,7 @@ class StepsController < ApplicationController
 
   # GET /steps/1 or /steps/1.json
   def show
+    render layout: 'edu_demo'
   end
 
   # GET /steps/new

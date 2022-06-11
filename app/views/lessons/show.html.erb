@@ -7,14 +7,14 @@ Page banner video START -->
 	<div class="container">
 		<div class="row g-3">
 			<!-- Course video START -->
-			<div class="col-12">
-				<% if @lesson.header_image.attached? %>
-					<p><%= image_tag @lesson.header_image %></p>
-				<% else %>
-					<p>Nessuna immagine presente</p>
+			<%# <div class="col-12"> %>
+				<%# if @lesson.header_image.attached? %>
+					<%#= image_tag @lesson.header_image %>
+				<%# else %>
+					<%# <p>Nessuna immagine presente</p> %>
 					<%#= image_tag "mockups/paint_view_of_mount_vernon.png", class: "light-mode-item navbar-brand-item", alt: "painting" %> 
-				<% end %>
-			</div>
+				<%# end %>
+			<%# </div> %>
 			<!-- Course video END -->
 
 			<!-- Playlist responsive toggler START -->
