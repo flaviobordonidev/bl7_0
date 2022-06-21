@@ -35,8 +35,8 @@
 							//width: '1024',
               videoId: '<%= @step.youtube_video_id %>',
 							playerVars: {
-								'playsinline': 1, 
-								'autoplay': 1
+								'playsinline': 1 
+								//'autoplay': 1,
 								//'controls': 0
 							},
 							events: {
@@ -49,6 +49,7 @@
 					// 4. The API will call this function when the video player is ready.
 					function onPlayerReady(event) {
 						event.target.playVideo();
+						console.log("COL CAZZO CHE PARTO DA SOLO ^_^");
 					}
 
 					// 5. The API calls this function when the player's state changes.
