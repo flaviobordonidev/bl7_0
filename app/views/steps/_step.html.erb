@@ -1,8 +1,6 @@
 <div id="<%= dom_id step %>" style="position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border:none;">
 
-  <%= form_with(model: [@lesson, step], local: true, id: "test-form", html: {'data-turbo' => "false"}) do |form| %>
-
-
+  <%= form_with(model: [@lesson, step], local: true, id: "test-form", html: {'data-turbo' => "false", style: "display: none;" }) do |form| %>
 
     <!-- =======================
     Newsletter START -->
