@@ -212,9 +212,12 @@ Page content START -->
 														<!-- Course lecture -->
 														<div class="d-flex justify-content-between align-items-center">
 															<div class="position-relative d-flex align-items-center">
-																<a href="#" class="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static">
+																<!--<a href="#" class="btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static">
 																	<i class="fas fa-play me-0"></i>
-																</a>
+																</a>-->
+																<%= link_to mockups_page_a_path, class: "btn btn-danger-soft btn-round btn-sm mb-0 stretched-link position-static" do %>
+																	<i class="fas fa-play me-0"></i>
+																<% end %>
 																<span class="d-inline-block text-truncate ms-2 mb-0 h6 fw-light w-200px">L'ambiente</span>
 															</div>
 															<p class="mb-0 text-truncate">6m 10s</p>
