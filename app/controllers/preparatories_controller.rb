@@ -8,6 +8,7 @@ class PreparatoriesController < ApplicationController
 
   # GET /preparatories/1 or /preparatories/1.json
   def show
+    render layout: 'edu_demo'
   end
 
   # GET /preparatories/new

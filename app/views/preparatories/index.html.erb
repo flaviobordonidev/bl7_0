@@ -6,7 +6,7 @@
   <% @preparatories.each do |preparatory| %>
     <%= render preparatory %>
     <p>
-      <%= link_to "Show this preparatory", preparatory %>
+      <%= link_to 'Show this preparatory', preparatory, data: { turbo: false } %>
     </p>
   <% end %>
 </div>
