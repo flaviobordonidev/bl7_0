@@ -17,6 +17,9 @@ class User < ApplicationRecord
   #enum role: [:user, :admin, :moderator, :author]
   enum role: {user: 0, admin: 1, moderator:2, author:3}
 
+  ## ActiveStorage
+  has_one_attached :profile_image
+
   # == Relationships ========================================================
 
   ## association one-to-many
