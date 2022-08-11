@@ -18,6 +18,8 @@
     <%#= javascript_import_module_tag "edu/functions.js" %>
     <%#= javascript_include_tag 'functions.js', "data-turbo-track": "reload" %>
 
+		<%= favicon_link_tag asset_path('edu/favicon-ubuntudream.png') %>
+
     <style>
     /*form-hidden*/
     #test-form {
@@ -191,7 +193,8 @@
 			<!-- Profile START -->
 			<div class="dropdown ms-1 ms-lg-0">
 				<a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-					<%= image_tag "edu/avatar/01.jpg", class: "avatar-img rounded-circle", alt: "avatar" %>
+					<%#= image_tag "edu/avatar/01.jpg", class: "avatar-img rounded-circle", alt: "avatar" %>
+					<%= image_tag current_user.profile_image, class: "avatar-img rounded-circle", alt: "avatar" %>
 				</a>
 				<ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3" aria-labelledby="profileDropdown">
 					<!-- Profile info -->
@@ -199,11 +202,13 @@
 						<div class="d-flex align-items-center">
 							<!-- Avatar -->
 							<div class="avatar me-3">
-								<%= image_tag "edu/avatar/01.jpg", class: "avatar-img rounded-circle shadow", alt: "avatar" %>
+								<%#= image_tag "edu/avatar/01.jpg", class: "avatar-img rounded-circle shadow", alt: "avatar" %>
+								<%= image_tag current_user.profile_image, class: "avatar-img rounded-circle", alt: "avatar" %>
 							</div>
 							<div>
-								<a class="h6" href="#">Lori Ferguson</a>
-								<p class="small m-0">example@gmail.com</p>
+								<!--<a class="h6" href="#">Lori Ferguson</a>-->
+								<%= link_to current_user.username, user_path(current_user), class: "h6" %>
+								<p class="small m-0"><%= current_user.email %></p>
 							</div>
 						</div>
 						<hr>

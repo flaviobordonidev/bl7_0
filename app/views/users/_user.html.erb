@@ -1,8 +1,11 @@
 <div id="<%= dom_id user %>">
 
   <p>
-    <% if @user.profile_image.attached? %>
-      <%= image_tag @user.profile_image %>
+    <% if user.profile_image.attached? %>
+      <%#= image_tag user.profile_image.variant(resize_to_limit: [100, 100]).processed.url %>
+      <%#= image_tag user.profile_image.variant(resize_to_limit: [150, 150]) %>
+      <%#= image_tag user.profile_image %>
+      <%= image_tag user.profile_image.variant(resize_to_fit: [250, 250]).processed.url %>
     <% else %>
       Nessuna immagine presente
     <% end %>
@@ -10,7 +13,7 @@
 
   <p>
     <strong>Name:</strong>
-    <%= user.name %>
+    <%= user.username %>
   </p>
 
   <p>

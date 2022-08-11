@@ -14,10 +14,14 @@ Rails.application.routes.draw do
   end
   resources :eg_posts, :only => [:index, :show] 
 
-  resources :eg_users
+  resources :eg_users 
   get 'users/index'
   devise_for :users, path: '', path_names: {sign_in: 'login', sign_out: 'logout'}, controllers: { sessions: 'users/sessions' }
-  resources :users
+  resources :users do
+    member do
+      get :delete_image_attachment
+    end
+  end
 
   get 'mockups/page_a'
   get 'mockups/page_b'

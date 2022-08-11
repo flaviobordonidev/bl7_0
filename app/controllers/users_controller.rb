@@ -69,6 +69,12 @@ class UsersController < ApplicationController
     end
   end
 
+  def delete_image_attachment
+    @image_to_delete = ActiveStorage::Attachment.find(params[:id])
+    @image_to_delete.purge
+    redirect_back(fallback_location: request.referer)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
@@ -79,9 +85,9 @@ class UsersController < ApplicationController
     # Only allow a list of trusted parameters through.
     def user_params
       if params[:user][:password].blank?
-        params.require(:user).permit(:name, :email, :language, :role, :profile_image)
+        params.require(:user).permit(:username, :email, :language, :role, :profile_image, :first_name, :last_name, :location, :bio, :phone_number)
       else
-        params.require(:user).permit(:name, :email, :password, :password_confirmation, :language, :role, :profile_image)
+        params.require(:user).permit(:username, :email, :password, :password_confirmation, :language, :role, :profile_image, :first_name, :last_name, :location, :bio, :phone_number)
       end
     end
 end

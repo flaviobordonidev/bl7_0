@@ -33,8 +33,10 @@ it:
   activerecord:
     attributes:
       user:
-        name: "Nome utente" # fallback for when label is nil
-        email: "Email" # fallback for when label is nil
+        username: "Nome utente (Nickname)" # fallback for when label is nil
+        email: "Email per login" # fallback for when label is nil (label is assigned by devise)
+        first_name: "Nome" # fallback for when label is nil
+        last_name: "Cognome" # fallback for when label is nil
         password: "Password" # fallback for when label is nil
         password_confirmation: "Conferma password" # fallback for when label is nil
         role: "ruolo"
