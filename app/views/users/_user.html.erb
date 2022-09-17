@@ -23,7 +23,16 @@
                   <% else %>
                     Nessuna immagine presente
                   <% end %>
-                </div>      
+                </div>
+    
+                <!-- Card body -->
+                <div class="card-body px-3">
+                    <%= link_to "Edit this user", edit_user_path(@user) %> |
+                    <%= link_to "Back to users", users_path %>
+
+                    <%= button_to "Destroy this user", @user, method: :delete unless @user == current_user %>
+                </div>
+
               </div>
               <!-- Instructor image END -->
             </div>
@@ -44,20 +53,20 @@
           <!-- Personal info -->
           <ul class="list-group list-group-borderless">
             <li class="list-group-item px-0">
-              <span class="h6 fw-light"><i class="fas fa-fw fa-map-marker-alt text-primary me-1 me-sm-3"></i>Address:</span>
-              <span>2002 Horton Ford Rd, Eidson, TN, 37731</span>
+              <span class="h6 fw-light"><i class="fas fa-fw fa-map-marker-alt text-primary me-1 me-sm-3"></i>Role:</span>
+              <span><%= user.role %></span>
             </li>
             <li class="list-group-item px-0">
               <span class="h6 fw-light"><i class="fas fa-fw fa-envelope text-primary me-1 me-sm-3"></i>Email:</span>
-              <span>example@gmail.com</span>
+              <span><%= user.email %></span>
             </li>
             <li class="list-group-item px-0">
               <span class="h6 fw-light"><i class="fas fa-fw fa-headphones text-primary me-1 me-sm-3"></i>Phone number:</span>
               <span>+896-789-546</span>
             </li>
             <li class="list-group-item px-0">
-              <span class="h6 fw-light"><i class="fas fa-fw fa-globe text-primary me-1 me-sm-3"></i>Website:</span>
-              <span>https://eduport.webestica.com/</span>
+              <span class="h6 fw-light"><i class="fas fa-fw fa-globe text-primary me-1 me-sm-3"></i>Lingua:</span>
+              <span><%= user.language %></span>
             </li>
           </ul>
 
@@ -69,25 +78,5 @@
   </section>
   <!-- =======================
   Page content END -->
-
-  <p>
-    <strong>Email:</strong>
-    <%= user.email %>
-  </p>
-
-  <p>
-    <strong>Language:</strong>
-    <%= user.language %>
-  </p>
-
-  <p>
-    <strong>Role:</strong>
-    <%= user.role %>
-  </p>
-
-  <p>
-    <strong>Encrypted password:</strong>
-    <%= user.encrypted_password %>
-  </p>
 
 </div> <!-- end Rails dom_id user (usefull for hotwire) -->
