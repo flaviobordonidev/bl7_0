@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: bl7_0_production
-  username: bl7_0
-  password: <%= ENV["BL7_0_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
